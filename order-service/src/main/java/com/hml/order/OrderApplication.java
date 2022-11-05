@@ -1,6 +1,7 @@
 package com.hml.order;
 
-import com.hml.order.config.DefaultFeignConfiguration;
+import com.hml.feign.clients.UserClient;
+import com.hml.feign.config.DefaultFeignConfiguration;
 import com.netflix.loadbalancer.IRule;
 import com.netflix.loadbalancer.RandomRule;
 import org.mybatis.spring.annotation.MapperScan;
@@ -15,7 +16,8 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 //添加注解开启Feign的功能：
 //添加在启动类EnableFeignClients上的配置意味者全局生效
-@EnableFeignClients(defaultConfiguration = DefaultFeignConfiguration.class)
+//指定需要加载的Client接口： clients = UserClient.class
+@EnableFeignClients(clients = UserClient.class,defaultConfiguration = DefaultFeignConfiguration.class)
 public class OrderApplication {
 
     public static void main(String[] args) {

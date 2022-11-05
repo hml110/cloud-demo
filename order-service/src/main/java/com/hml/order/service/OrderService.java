@@ -1,12 +1,11 @@
 package com.hml.order.service;
 
-import com.hml.order.clients.UserClient;
+import com.hml.feign.clients.UserClient;
+import com.hml.feign.pojo.User;
 import com.hml.order.mapper.OrderMapper;
 import com.hml.order.pojo.Order;
-import com.hml.order.pojo.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
 @Service
 public class OrderService {

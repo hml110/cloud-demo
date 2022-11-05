@@ -1,4 +1,4 @@
-package com.hml.order.pojo;
+package com.hml.feign.pojo;
 
 import lombok.Data;
 
