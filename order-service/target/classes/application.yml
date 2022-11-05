@@ -48,3 +48,17 @@ ribbon:
     enabled: true #开启饥饿加载
     clients:    #指定饥饿加载的服务名称
       - userserver
+
+#fegin 的日志xml配置
+#feign:
+#  client:
+#    config:
+#      default:
+#        logger-level: FULL  #最高等级的日志
+
+#Feign使用优化 Apache HttpClient ：支持连接池
+feign:
+  httpclient:
+    enabled: true #开启feign对HttpClient的支持
+    max-connections: 300 # 最大的连接数
+    max-connections-per-route: 60 # 每个路径的最大连接数  最好根据实际服务数量来决定
