@@ -10,10 +10,10 @@ spring:
     name: orderserver
   cloud:
     nacos:
-      server-addr: localhost:8848  #nacos服务地址
-      discovery:
-        cluster-name: HZ #集群名称
-        ephemeral: false   # 设置为非临时实例
+      server-addr: 192.168.0.105:80  #nacos服务地址
+#      discovery:
+#        cluster-name: HZ #集群名称
+#        ephemeral: false   # 设置为非临时实例
 #        namespace: 509933fe-73b7-448f-8b88-1a19d0c99b9b  #dev环境 命名空间id  相同环境下的服务才可访问
 
 
