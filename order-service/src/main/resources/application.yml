@@ -10,7 +10,7 @@ spring:
     name: orderserver
   cloud:
     nacos:
-      server-addr: 192.168.0.105:80  #nacos服务地址
+      server-addr: 192.168.0.105:80  #nacos集群服务地址
 #      discovery:
 #        cluster-name: HZ #集群名称
 #        ephemeral: false   # 设置为非临时实例

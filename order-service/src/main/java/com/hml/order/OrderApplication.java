@@ -19,7 +19,6 @@ import org.springframework.web.client.RestTemplate;
 //指定需要加载的Client接口： clients = UserClient.class
 @EnableFeignClients(clients = UserClient.class,defaultConfiguration = DefaultFeignConfiguration.class)
 public class OrderApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(OrderApplication.class, args);
     }
